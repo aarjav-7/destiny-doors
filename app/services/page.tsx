@@ -86,9 +86,9 @@ export default function ServicesPage() {
                   {service.description}
                 </p>
 
-                <Button asChild className="w-full mt-auto">
-                  <Link href="/book">Book This Session</Link>
-                </Button>
+                <Link href="/book" className="mt-auto block w-full">
+                  <Button className="w-full">Book This Session</Button>
+                </Link>
               </Card>
             ))}
           </div>
@@ -116,9 +116,9 @@ export default function ServicesPage() {
                 <p className="text-gray-warm mb-4">
                   {service.description}
                 </p>
-                <Button variant="outline" asChild className="w-full">
-                  <Link href="/book">Learn More</Link>
-                </Button>
+                <Link href="/book" className="block w-full">
+                  <Button variant="outline" className="w-full">Learn More</Button>
+                </Link>
               </Card>
             ))}
           </div>
@@ -188,9 +188,9 @@ export default function ServicesPage() {
           <p className="text-lg lg:text-xl opacity-90 mb-8 max-w-[600px] mx-auto">
             Book a session and gain the clarity and guidance you've been seeking.
           </p>
-          <Button size="lg" className="bg-white text-primary hover:bg-base" asChild>
-            <Link href="/book">Book Your Session Now</Link>
-          </Button>
+          <Link href="/book">
+            <Button size="lg" className="bg-white text-primary hover:bg-base">Book Your Session Now</Button>
+          </Link>
         </div>
       </section>
     </>

@@ -345,9 +345,9 @@ export default function HomePage() {
                     <p className="text-base text-gray-warm mb-6 leading-relaxed flex-grow">
                       {service.description}
                     </p>
-                    <Button asChild className="w-full">
-                      <Link href={`/services#${service.id}`}>Learn More</Link>
-                    </Button>
+                    <Link href={`/services#${service.id}`} className="block w-full">
+                      <Button className="w-full">Learn More</Button>
+                    </Link>
                   </Card>
                 </motion.div>
               </motion.div>
@@ -362,11 +362,11 @@ export default function HomePage() {
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.4 }}
           >
-            <Button variant="text" asChild>
-              <Link href="/services" className="inline-flex items-center gap-2">
+            <Link href="/services" className="inline-flex items-center gap-2">
+              <Button variant="text">
                 View All Services <Icons.arrowRight size={16} />
-              </Link>
-            </Button>
+              </Button>
+            </Link>
           </motion.div>
         </div>
       </section>
@@ -416,11 +416,11 @@ export default function HomePage() {
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.5 }}
           >
-            <Button variant="text" asChild>
-              <Link href="/testimonials" className="inline-flex items-center gap-2">
+            <Link href="/testimonials" className="inline-flex items-center gap-2">
+              <Button variant="text">
                 View All Testimonials <Icons.arrowRight size={16} />
-              </Link>
-            </Button>
+              </Button>
+            </Link>
           </motion.div>
         </div>
       </section>
@@ -503,11 +503,11 @@ export default function HomePage() {
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.4 }}
           >
-            <Button variant="text" asChild>
-              <Link href="/blog" className="inline-flex items-center gap-2">
-                Read All Articles <Icons.arrowRight size={16} />
-              </Link>
-            </Button>
+            <Link href="/blog" className="inline-flex items-center gap-2">
+              <Button variant="text">
+                View All Posts <Icons.arrowRight size={16} />
+              </Button>
+            </Link>
           </motion.div>
         </div>
       </section>

@@ -67,9 +67,9 @@ export function Header() {
 
         {/* CTA Button (Desktop) */}
         <div className="hidden lg:block">
-          <Button asChild>
-            <Link href="/book">Book Session</Link>
-          </Button>
+          <Link href="/book">
+            <Button>Book Session</Button>
+          </Link>
         </div>
 
         {/* Mobile Menu Button */}
@@ -100,9 +100,9 @@ export function Header() {
                 {item.name}
               </Link>
             ))}
-            <Button className="w-full mt-6" asChild>
-              <Link href="/book">Book Session</Link>
-            </Button>
+            <Link href="/book" className="block w-full mt-6">
+              <Button className="w-full">Book Session</Button>
+            </Link>
           </nav>
         </div>
       )}
