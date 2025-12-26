@@ -1,7 +1,10 @@
 export const fadeInUp = {
   initial: { opacity: 0, y: 10 },
-  animate: { opacity: 1, y: 0 },
-  transition: { duration: 0.6, ease: [0.22, 1, 0.36, 1] }
+  animate: { 
+    opacity: 1, 
+    y: 0,
+    transition: { duration: 0.6, ease: [0.22, 1, 0.36, 1] }
+  }
 };
 
 export const staggerContainer = {
@@ -19,24 +22,30 @@ export const scaleOnHover = {
 
 export const slideInFromLeft = {
   initial: { opacity: 0, x: -20 },
-  animate: { opacity: 1, x: 0 },
-  transition: { duration: 0.5, ease: [0.22, 1, 0.36, 1] }
+  animate: { 
+    opacity: 1, 
+    x: 0,
+    transition: { duration: 0.5, ease: [0.22, 1, 0.36, 1] }
+  }
 };
 
 export const slideInFromRight = {
   initial: { opacity: 0, x: 20 },
-  animate: { opacity: 1, x: 0 },
-  transition: { duration: 0.5, ease: [0.22, 1, 0.36, 1] }
+  animate: { 
+    opacity: 1, 
+    x: 0,
+    transition: { duration: 0.5, ease: [0.22, 1, 0.36, 1] }
+  }
 };
 
 export const floatAnimation = {
   animate: {
     y: [0, -10, 0],
-  },
-  transition: {
-    duration: 3,
-    repeat: Infinity,
-    ease: 'easeInOut',
+    transition: {
+      duration: 3,
+      repeat: Infinity,
+      ease: 'easeInOut',
+    },
   },
 };
 
@@ -47,30 +56,40 @@ export const pulseGlow = {
       '0 0 40px rgba(123, 108, 246, 0.6)',
       '0 0 20px rgba(123, 108, 246, 0.3)',
     ],
-  },
-  transition: {
-    duration: 2,
-    repeat: Infinity,
-    ease: 'easeInOut',
+    transition: {
+      duration: 2,
+      repeat: Infinity,
+      ease: 'easeInOut',
+    },
   },
 };
 
 export const rotateIn = {
   initial: { opacity: 0, rotate: -10, scale: 0.9 },
-  animate: { opacity: 1, rotate: 0, scale: 1 },
-  transition: { duration: 0.6, ease: [0.22, 1, 0.36, 1] },
+  animate: { 
+    opacity: 1, 
+    rotate: 0, 
+    scale: 1,
+    transition: { duration: 0.6, ease: [0.22, 1, 0.36, 1] }
+  },
 };
 
 export const expandIn = {
   initial: { opacity: 0, scale: 0.8 },
-  animate: { opacity: 1, scale: 1 },
-  transition: { duration: 0.5, ease: [0.22, 1, 0.36, 1] },
+  animate: { 
+    opacity: 1, 
+    scale: 1,
+    transition: { duration: 0.5, ease: [0.22, 1, 0.36, 1] }
+  },
 };
 
 export const slideUpStagger = {
   initial: { opacity: 0, y: 30 },
-  animate: { opacity: 1, y: 0 },
-  transition: { duration: 0.6 },
+  animate: { 
+    opacity: 1, 
+    y: 0,
+    transition: { duration: 0.6 }
+  },
 };
 
 export const hoverLift = {
