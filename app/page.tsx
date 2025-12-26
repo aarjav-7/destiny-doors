@@ -342,13 +342,9 @@ export default function HomePage() {
                     <h3 className="font-heading text-2xl font-semibold text-charcoal mb-3">
                       {service.title}
                     </h3>
-                    <p className="text-base text-gray-warm mb-4 leading-relaxed flex-grow">
+                    <p className="text-base text-gray-warm mb-6 leading-relaxed flex-grow">
                       {service.description}
                     </p>
-                    <div className="flex gap-4 text-sm text-gray-muted mb-5">
-                      <span>{service.duration}</span>
-                      <span>{service.price}</span>
-                    </div>
                     <Button asChild className="w-full">
                       <Link href={`/services#${service.id}`}>Learn More</Link>
                     </Button>
